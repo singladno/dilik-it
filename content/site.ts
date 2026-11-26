@@ -3,7 +3,7 @@ export const site = {
   domain: "dilik.ru",
   tagline: "MVP SaaS и AI за 8–12 недель",
   description:
-    "Студия разработки в РФ: запускаем MVP SaaS и AI-интеграции за 8–12 недель. Созвон 30 минут — план, сроки и ориентир по бюджету. Хостинг на серверах в России.",
+    "Студия разработки: MVP SaaS и AI-интеграции за 8–12 недель. Пришлите ТЗ или описание задачи — вернёмся с предложением по этапам, срокам и бюджету.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://dilik.ru",
   contact: {
     email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "dragonsecret96@gmail.com",

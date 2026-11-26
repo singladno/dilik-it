@@ -82,10 +82,7 @@ export function Hero() {
       <Container>
         <div className="grid items-center gap-12 lg:grid-cols-12">
           <div className="min-w-0 lg:col-span-7">
-            <p className="eyebrow animate-fade-in">
-              Студия разработки · ИП в РФ
-            </p>
-            <h1 className="mt-5 text-display-xl text-balance">
+            <h1 className="text-display-xl text-balance">
               <span className="block">Запустим ваш</span>
               <span className="block">MVP за 8–12 недель</span>
               <span className="mt-1 block bg-gradient-to-r from-accent to-indigo-400 bg-clip-text text-transparent">
@@ -93,18 +90,17 @@ export function Hero() {
               </span>
             </h1>
             <p className="mt-6 max-w-xl text-lg text-ink-muted text-pretty">
-              От брифа до продакшена на серверах в РФ. Сначала 30‑минутный
-              разбор задачи — затем план, сроки и ориентир по бюджету. Без
-              размытого «делаем всё».
+              Пришлите ТЗ или короткое описание задачи — разберём и вернёмся с
+              предложением: этапы, сроки и ориентир по бюджету.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href="#contact" className="btn-primary">
-                Созвон 30 минут
+                Описать задачу
                 <span aria-hidden>→</span>
               </Link>
-              <Link href="#offer-entry" className="btn-secondary">
-                Как это работает
+              <Link href="#process" className="btn-secondary">
+                Как работаем
               </Link>
             </div>
 
