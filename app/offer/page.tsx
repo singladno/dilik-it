@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Container } from "@/components/Container";
 import { PageHero } from "@/components/PageHero";
 import { site } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: "Договор-оферта",
-  description: "Публичная оферта на оказание услуг.",
+  title: "Договор на услуги",
+  description: "Условия сотрудничества: индивидуальный договор на оказание услуг.",
+  robots: { index: false, follow: false },
 };
 
 export default function OfferPage() {
@@ -13,35 +15,43 @@ export default function OfferPage() {
     <>
       <PageHero
         eyebrow="Документы"
-        title="Договор-оферта"
-        breadcrumbs={[{ href: "/offer", label: "Оферта" }]}
+        title="Договор на услуги"
+        breadcrumbs={[{ href: "/offer", label: "Договор" }]}
       />
 
       <section className="pb-20">
         <Container className="max-w-4xl">
-          <div className="rounded-md border border-warning/30 bg-warning/5 p-4 text-sm">
-            <strong>Заглушка.</strong> Договор-оферта — индивидуальный документ.
-            Используйте этот раздел, чтобы разместить вашу публичную оферту
-            после её подготовки с юристом или удалите ссылку на «Оферту» в
-            подвале сайта (<code>components/Footer.tsx</code>) до её появления.
-          </div>
-
-          <article className="prose prose-zinc mt-8 max-w-none">
+          <article className="prose prose-zinc max-w-none">
             <p>
-              {site.legal.name}, именуемое в дальнейшем «Исполнитель», публикует
-              настоящую публичную оферту на оказание услуг по разработке
-              программного обеспечения.
+              {site.legal.name} оказывает услуги по разработке программного
+              обеспечения на основании индивидуального договора. Публичная
+              оферта на сайте не размещается.
             </p>
             <p>
-              Полный текст договора будет опубликован здесь после согласования с
-              юристом.
+              После описания задачи мы готовим предложение (этапы, сроки,
+              ориентир по бюджету). При согласии сторон заключаем договор,
+              фиксируем объём в приложении и приступаем к работе после
+              предоплаты.
             </p>
             <p>
-              По вопросам сотрудничества пишите на {site.contact.email}
-              {site.contact.telegram
-                ? ` или в Telegram ${site.contact.telegram}`
-                : ""}
+              По вопросам сотрудничества:{" "}
+              <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a>
+              {site.contact.telegram ? (
+                <>
+                  {" "}
+                  или{" "}
+                  <a
+                    href={`https://t.me/${site.contact.telegram.replace(/^@/, "")}`}
+                    rel="noopener"
+                  >
+                    Telegram {site.contact.telegram}
+                  </a>
+                </>
+              ) : null}
               .
+            </p>
+            <p>
+              <Link href="/#contact">Описать задачу →</Link>
             </p>
           </article>
         </Container>

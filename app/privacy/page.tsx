@@ -22,14 +22,6 @@ export default function PrivacyPage() {
       <section className="pb-20">
         <Container className="max-w-4xl">
           <article className="prose prose-zinc max-w-none prose-headings:font-bold prose-h2:mt-10 prose-h2:text-2xl prose-h3:mt-6 prose-h3:text-lg">
-            <div className="rounded-md border border-warning/30 bg-warning/5 p-4 text-sm not-prose">
-              <strong>Шаблон документа.</strong> Этот текст подготовлен как
-              отправная точка. Перед публикацией обязательно вычитайте его,
-              замените плейсхолдеры реквизитов и проверьте соответствие вашему
-              процессу обработки данных. Рекомендуем согласовать с юристом,
-              особенно если вы планируете работать с гос. сектором или банками.
-            </div>
-
             <p>
               Настоящая Политика обработки персональных данных (далее —
               «Политика») действует в отношении информации, которую{" "}

@@ -52,14 +52,6 @@ export function Footer() {
                   Политика cookie
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/offer"
-                  className="text-sm text-ink-muted hover:text-ink"
-                >
-                  Договор-оферта
-                </Link>
-              </li>
             </ul>
           </div>
 
